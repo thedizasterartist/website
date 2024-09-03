@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>The Dizaster Artist</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+ 	<link href='http://fonts.googleapis.com/css?family=Arvo|PT+Sans' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<!--For this page only-->
+	<link rel="stylesheet" href="stylesheets/sequence.css">
+	<link rel="stylesheet" href="stylesheets/flexslider.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<link rel="stylesheet" href="stylesheets/ie-only.css">
+	<![endif]-->
+
+	<!-- Javascript
+	================================================== -->
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/sequence.jquery-min.js"></script>
+	 
+	<script type="text/javascript" src="js/jflickrfeed.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/superfish.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="js/selectnav.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<script>
+		///// Sequence Slider Options
+		$(document).ready(function(){
+		    var options = {
+		        nextButton: true,
+		        prevButton: true,
+		        pagination: true,
+		        animateStartingFrameIn: true,
+		        autoPlayDelay: 3500,
+		        pauseOnHover: false,
+		        preloader: true,
+		        preloadTheseFrames: [1],
+		        preloadTheseImages: [
+		            "images/sequence-slider/slider-model-1.png",
+		            "images/sequence-slider/slider-bg-1.jpg"
+		]
+		    };
+    
+		    var mySequence = $("#sequence").sequence(options).data("sequence");
+		});
+
+		///// Flexslider for Client Logos
+		$(document).ready(function(){
+		    $('.flexslider').flexslider({
+		        animation: "slide",
+		        animationLoop: false,
+		        slideshow: false,
+		        controlNav: false,
+		        itemWidth: 100,
+		        itemMargin:0,
+		        minItems: 2,
+		        maxItems: 7
+		    });
+		});
+	</script>
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+</head>
+<body>
+
+<!--BG Image-->
+<div class="bg-dots"></div>
+
+	<!-- Header
+	================================================== -->
+	<div class="container box">
+		<header class="eight columns">
+			<h1 class="logo"><a href="index.html">Thema</a></h1>
+		</header>
+		<nav class="eight columns social">
+			<ul>
+				<li><a href="#" class="facebook">facebook</a></li>
+				<li><a href="#" class="twitter">twitter</a></li>
+				<li><a href="#" class="dribble">dribbble</a></li>
+				<li><a href="#" class="flickr">flickr</a></li>
+				<li><a href="#" class="vimeo">vimeo</a></li>
+			</ul>
+		</nav>
+
+		<!-- Divider -->
+		<div class="sixteen columns">
+			<hr />
+		</div>
+
+		<!-- Main Navigation -->
+		<nav class="eleven columns main-nav" id="nav">
+			<ul class="sf-menu">
+				<li><a href="index.html" class="active">WELCOME</a></li>
+				<li><a href="features-elements.htm">Features</a>
+					<ul>
+						<li><a href="features-elements.html">Page Elements</a></li>
+						<li><a href="features-icons.html">Icon Set</a></li>
+						<li><a href="features-pricing.html">Pricing Tables</a></li>
+						<li><a href="features-404.html">404 Error</a></li>
+						<li><a href="#">3rd Level Nav</a>
+							<ul>
+								<li><a href="#">Sub level 1</a></li>
+								<li><a href="#">Sub level 2</a></li>
+								<li><a href="#">Sub level 3</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="sample-page.html">ABOUT</a></li>
+				<li><a href="portfolio-3col.html">Portfolio</a>
+					<ul>
+						<li><a href="portfolio-3col.html">3 Column</a></li>
+						<li><a href="portfolio-4col.html">4 Column</a></li>
+						<li><a href="portfolio-4col-round.html">4 Col Round</a></li>
+						<li><a href="portfolio-grid.html">Grid Layout</a></li>
+						<li><a href="portfolio-masonry.html">Masonry Style</a></li>
+						<li><a href="portfolio-dribbble.html">Dribbble</a></li>
+						<li><a href="portfolio-flickr.html">Flickr</a></li>
+						<li><a href="portfolio-instagram.html">Instagram</a></li>
+						<li><a href="portfolio-single.html">Portfolio Single</a></li>
+					</ul>
+				</li>
+				<li><a href="blog-layout1.html">BLOG</a>
+					<ul>
+						<li><a href="blog-layout1.html">Blog Layout 1</a></li>
+						<li><a href="blog-layout2.html">Blog Layout 2</a></li>
+						<li><a href="blog-layout3.html">Blog Layout 3</a></li>
+						<li><a href="blog-single.html">Blog Single</a></li>
+					</ul>
+				</li>
+				<li><a href="contact-page.php">CONTACT</a></li>
+			</ul>
+
+			<script>
+				// Initiate selectnav function for mobile navigation
+				selectnav();
+			</script>
+		</nav><!-- end main navigation-->
+
+		<!--Search Form-->
+		<div class="five columns search">
+			<form action="#" method="post" class="search-form">
+				<input type="text" placeholder="Search">
+				<button type="submit" class="search-btn">Search</button>
+			</form>
+		</div>
+
+	</div><!-- end header container -->
+
+	<!-- Page Body Content
+	================================================== -->
+	<div class="container box">
+
+		<!--Sequence Slider -->
+		<div class="slider-container sixteen-columns">
+		<div id="sequence">
+
+				<div class="sequence-prev"></div>
+				<div class="sequence-next"></div>
+
+				<ul class="sequence-canvas">
+					<li class="animate-in">
+						<img class="background" src="images/sequence-slider/slider-bg-2.jpg" alt="Background" />
+						<p class="info"><span class="title">Flexible Theme</span>
+						<span class="subtitle">Nam pellentesque mollis felis, a iaculis.</span>
+						<span class="subtext">Donec eget urna massa, sit amet convallis sapien. Quisque nec nisl id ligula feugiat cursus vel at odio.</span></p>
+						<img class="model-2" src="images/sequence-slider/slider-model-2.png" alt="Model 2" />
+					</li>
+
+					<li>
+						<img class="background" src="images/sequence-slider/slider-bg-1.jpg" alt="Background" />
+						<p class="info"><span class="title">Creative Control</span>
+						<span class="subtitle">Lorem ipsum dolor sit amet, consectetur.</span>
+						<span class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra malesuada odio, a dignissim est condimentum at.</span></p>
+						<img class="model-1" src="images/sequence-slider/slider-model-1.png" alt="Model 1" />
+					</li>
+
+					<li>
+						<img class="background" src="images/sequence-slider/slider-bg-3.jpg" alt="Background" />
+						<p class="info"><span class="title">Modern Design</span>
+						<span class="subtitle">Praesent dictum sollicitudin urna.</span>
+						<span class="subtext">Nam pellentesque mollis felis, a iaculis nulla elementum dapibus. Etiam sit amet nibh tellus, id elementum nisl.</span></p>
+						<img class="model-3" src="images/sequence-slider/slider-model-3.png" alt="Model 3" />
+					</li>
+				</ul>
+
+				<ul class="sequence-pagination">
+					<li><img src="images/sequence-slider/slider-nav-2.jpg" alt="Model 2" /></li>
+					<li><img src="images/sequence-slider/slider-nav-1.jpg" alt="Model 1" /></li>
+					<li><img src="images/sequence-slider/slider-nav-3.jpg" alt="Model 3" /></li>
+				</ul>
+
+			</div><!--end #sequence-->
+			</div><!--end slider-container-->
+
+		<!--News Section-->
+		<section class="sixteen columns news-section">
+			<header><h2>Recent News</h2></header>
+
+			<article class="one-third column alpha">
+				<a href="#" class="news-header">
+					<span class="news-title">Phasellus a tortor vel nisl aliquet mattis</span>
+					<img src="images/filler/news-img-1.jpg" alt="News Image" class="scale-with-grid" />
+				</a>
+				<span class="date">August 15, 2015 | <a href="#">2 Comments</a></span>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nulla ac dolor tincidunt dictum vel nec dui. Phasellus a tortor vel nisl aliquet mattis sed a nisl. Ut ac sollicitudin neque. Sed tortor odio, scelerisque non tincidunt et, aliquam quis eros.
+			</article>
+
+			<article class="one-third column">
+				<a href="#" class="news-header">
+					<span class="news-title">Sed tortor odio scelerisque adipiscing</span>
+					<img src="images/filler/news-img-2.jpg" alt="News Image" class="scale-with-grid" />
+				</a>
+				<span class="date">August 15, 2015 | <a href="#">4 Comments</a></span>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nulla ac dolor tincidunt dictum vel nec dui. Phasellus a tortor vel nisl aliquet mattis sed a nisl. Ut ac sollicitudin neque. Sed tortor odio, scelerisque non tincidunt et, aliquam quis eros.
+			</article>
+
+			<article class="one-third column omega">
+				<a href="#" class="news-header">
+					<span class="news-title">Quisque sit amet nulla ac dolor tincidunt</span>
+					<img src="images/filler/news-img-3.jpg" alt="News Image" class="scale-with-grid" />
+				</a>
+				<span class="date">August 15, 2015 | <a href="#">3 Comments</a></span>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nulla ac dolor tincidunt dictum vel nec dui. Phasellus a tortor vel nisl aliquet mattis sed a nisl. Ut ac sollicitudin neque. Sed tortor odio, scelerisque non tincidunt et, aliquam quis eros.
+			</article>
+		</section><!-- end news section-->
+
+		<!-- Callout -->
+		<section class="sixteen columns callout">
+			<div class="twelve columns alpha msg">
+				<h4>This is a giant callout box for important information.</h4>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nulla ac dolor tincidunt dictum vel nec dui. Phasellus a tortor vel nisl aliquet mattis sed a nisl. Ut ac sollicitudin neque. 
+			</div>
+			<div class="3 columns omega">
+				<a href="#" class="button medium"><i class="icon-info-sign"></i> More Information</a>
+			</div>
+		</section><!--end callout-->
+
+
+	<!--Portfolio Section-->
+		<section class="sixteen columns portfolio-section">
+			<header><h2>From the Portfolio</h2></header>
+		</section>
+
+			<ul class="portfolio-section clearfix">
+				<li class="portfolio-4col">
+					<div class="portfolio-item">
+						<a href="images/filler/portfolio-img-full.jpg" class="portfolio-zoom" data-rel="prettyPhoto" title="Portfolio Item"></a>
+						<a href="portfolio-single.html" class="portfolio-link"></a>
+						<span class="portfolio-bg"></span>
+						<img src="images/filler/portfolio-img-1.jpg" alt="Portfolio Item" class="scale-with-grid" />
+					</div>
+					<a href="portfolio-single.html" class="project-title">Illustration</a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</li>
+
+				<li class="portfolio-4col">
+					<div class="portfolio-item">
+						<a href="images/filler/portfolio-img-full.jpg" class="portfolio-zoom" data-rel="prettyPhoto" title="Portfolio Item"></a>
+						<a href="portfolio-single.html" class="portfolio-link"></a>
+						<span class="portfolio-bg"></span>
+						<img src="images/filler/portfolio-img-2.jpg" alt="Portfolio Item" class="scale-with-grid" />
+					</div>
+					<a href="portfolio-single.html" class="project-title">Web Design</a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</li>
+
+				<li class="portfolio-4col">
+					<div class="portfolio-item">
+						<a href="images/filler/portfolio-img-full.jpg" class="portfolio-zoom" data-rel="prettyPhoto" title="Portfolio Item"></a>
+						<a href="portfolio-single.html" class="portfolio-link"></a>
+						<span class="portfolio-bg"></span>
+						<img src="images/filler/portfolio-img-3.jpg" alt="Portfolio Item" class="scale-with-grid" />
+					</div>
+					<a href="portfolio-single.html" class="project-title">Video Production</a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+				</li>
+
+				<li class="portfolio-4col">
+					<div class="portfolio-item">
+						<a href="images/filler/portfolio-img-full.jpg" class="portfolio-zoom" data-rel="prettyPhoto" title="Portfolio Item"></a>
+						<a href="portfolio-single.html" class="portfolio-link"></a>
+						<span class="portfolio-bg"></span>
+						<img src="images/filler/portfolio-img-4.jpg" alt="Portfolio Item" class="scale-with-grid" />
+					</div>
+					<a href="portfolio-single.html" class="project-title">Logo Design</a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+				</li>
+
+				<li class="portfolio-4col">
+					<div class="portfolio-item">
+						<a href="images/filler/portfolio-img-full.jpg" class="portfolio-zoom" data-rel="prettyPhoto" title="Portfolio Item"></a>
+						<a href="portfolio-single.html" class="portfolio-link"></a>
+						<span class="portfolio-bg"></span>
+						<img src="images/filler/portfolio-img-5.jpg" alt="Portfolio Item" class="scale-with-grid" />
+					</div>
+					<a href="portfolio-single.html" class="project-title">Illustration</a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+				</li>
+
+				<li class="portfolio-4col">
+					<div class="portfolio-item">
+						<a href="images/filler/portfolio-img-full.jpg" class="portfolio-zoom" data-rel="prettyPhoto" title="Portfolio Item"></a>
+						<a href="portfolio-single.html" class="portfolio-link"></a>
+						<span class="portfolio-bg"></span>
+						<img src="images/filler/portfolio-img-6.jpg" alt="Portfolio Item" class="scale-with-grid" />
+					</div>
+					<a href="portfolio-single.html" class="project-title">Video Production</a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+				</li>
+
+				<li class="portfolio-4col" data-id="id-7" data-type="illu">
+					<div class="portfolio-item">
+						<a href="images/filler/portfolio-img-full.jpg" class="portfolio-zoom" data-rel="prettyPhoto" title="Portfolio Item"></a>
+						<a href="portfolio-single.html" class="portfolio-link"></a>
+						<span class="portfolio-bg"></span>
+						<img src="images/filler/portfolio-img-7.jpg" alt="Portfolio Item" class="scale-with-grid" />
+					</div>
+					<a href="portfolio-single.html" class="project-title">Illustration</a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+				</li>
+
+				<li class="portfolio-4col" data-id="id-8" data-type="video">
+					<div class="portfolio-item">
+						<a href="images/filler/portfolio-img-full.jpg" class="portfolio-zoom" data-rel="prettyPhoto" title="Portfolio Item"></a>
+						<a href="portfolio-single.html" class="portfolio-link"></a>
+						<span class="portfolio-bg"></span>
+						<img src="images/filler/portfolio-img-8.jpg" alt="Portfolio Item" class="scale-with-grid" />
+					</div>
+					<a href="portfolio-single.html" class="project-title">Development</a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+				</li>
+			</ul>
+		<!--end portfolio section-->
+
+		<!--Client Section-->
+		<section class="sixteen columns client-section">
+			<header><h2>Our Esteemed Clients</h2></header>
+			<div class="flexslider">
+ 				<ul class="slides">
+ 					<li><a href="#"><img src="images/filler/client-logo-2.jpg" alt="Client Logo" /></a></li>
+ 					<li><a href="#"><img src="images/filler/client-logo-1.jpg" alt="Client Logo" /></a></li>
+ 					<li><a href="#"><img src="images/filler/client-logo-3.jpg" alt="Client Logo" /></a></li>
+ 					<li><a href="#"><img src="images/filler/client-logo-4.jpg" alt="Client Logo" /></a></li>
+ 					<li><a href="#"><img src="images/filler/client-logo-5.jpg" alt="Client Logo" /></a></li>
+ 					<li><a href="#"><img src="images/filler/client-logo-6.jpg" alt="Client Logo" /></a></li>
+ 					<li><a href="#"><img src="images/filler/client-logo-7.jpg" alt="Client Logo" /></a></li>
+ 					<li><a href="#"><img src="images/filler/client-logo-8.jpg" alt="Client Logo" /></a></li>
+ 					<li><a href="#"><img src="images/filler/client-logo-9.jpg" alt="Client Logo" /></a></li>
+ 					<li><a href="#"><img src="images/filler/client-logo-10.jpg" alt="Client Logo" /></a></li>
+ 					<li><a href="#"><img src="images/filler/client-logo-11.jpg" alt="Client Logo" /></a></li>
+ 					<li><a href="#"><img src="images/filler/client-logo-12.jpg" alt="Client Logo" /></a></li>
+ 					<li><a href="#"><img src="images/filler/client-logo-13.jpg" alt="Client Logo" /></a></li>
+ 					<li><a href="#"><img src="images/filler/client-logo-14.jpg" alt="Client Logo" /></a></li>
+ 				</ul>
+ 			</div>
+		</section>
+
+	</div><!--end body container -->
+
+	<!--Footer Section-->
+		<div class="container footer-section">
+
+			<!--Site/Theme Info-->
+			<section class="four columns footer-info">
+				<h5 class="logo"><a href="index.html">Thema</a></h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nulla ac dolor tincidunt dictum vel nec dui. Phasellus a tortor vel nisl aliquet mattis sed a nisl. Ut ac sollicitudin neque. Sed tortor odio.</p>
+			</section>
+
+			<!--Latest Posts-->
+			<section class="four columns footer-info">
+				<h5>Latest Posts</h5>
+				<ul>
+					<li><a href="#">Lorem ipsum dolor sit amet elit sollicitudin neque</a></li>
+					<li><a href="#">Ut ac sollicitudin neque sed tortor odio tincidunt dictum</a></li>
+					<li><a href="#">Phasellus a tortor vel nisl aliquet mattis sed a nisl</a></li>
+				</ul>
+			</section>
+
+			 <!--Popular Posts-->
+			<section class="four columns footer-info">
+				<h5>Popular Posts</h5>
+				<ul>
+					<li><a href="#">Lorem ipsum dolor sit amet elit sollicitudin neque</a></li>
+					<li><a href="#">Ut ac sollicitudin neque sed tortor odio tincidunt dictum</a></li>
+					<li><a href="#">Phasellus a tortor vel nisl aliquet mattis sed a nisl</a></li>
+				</ul>
+			</section>
+
+			<!--Flickr Feed-->
+			<section class="four columns footer-info">
+				<h5>Flickr Feed</h5>
+				<div id="flickr"></div>
+			</section>
+
+		</div><!--end footer container -->
+
+	<!--Copyright Section-->
+		<div class="container copyright-section">
+			<section class="eight columns">
+				Copyright &copy; 2024 The Dizaster Artist. All right reserved.
+			</section>
+			<section class="eight columns">
+				<ul class="footer-nav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Sample Page</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</section>
+		</div><!--end copyright container -->
+
+		<script>
+		// Fullscreen Background Image
+		$.backstretch("images/backgrounds/background.jpg");
+	</script>
+
+<!-- End Document
+================================================== -->
+</body>
+</html>
